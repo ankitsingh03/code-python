@@ -1,0 +1,10 @@
+name, char = input("enter name and char").split(",")
+print(f"length os user name : {len(name)}")
+a = name.lower()
+# print(f"'{char}' count are : {a.count(char)}")
+
+# a = name.lower()
+# b = char.lower()
+# a.count(b)
+# name.lower().count(char.lower())
+print(f"count is : {name.lower().count(char.lower())}")
