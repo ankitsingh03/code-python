@@ -1,24 +1,6 @@
-# Class for Computer Science Student
-class CSStudent:
-	stream = 'cse'	 # Class Variable
-	def __init__(self, name, roll):
-		self.name = name
-		self.roll = roll
-
-# Driver program to test the functionality
-# Creating objects of CSStudent class
-a = CSStudent("Geek", 1)
-b = CSStudent("Nerd", 2)
-
-print("Initially")
-print(a.stream)
-print(b.stream)
-
-# This thing doesn't change class(static) variable
-# Instead creates instance variable for the object
-# 'a' that shadows class member.
-a.stream = "ece"
-
-print ("\nAfter changing a.stream")
-print(a.stream)
-print (b.stream)
+lst = list("35004")
+print(lst.index('7'))
+while '0' in lst:
+	lst.remove('0')
+	lst.append('0')
+print(lst)
