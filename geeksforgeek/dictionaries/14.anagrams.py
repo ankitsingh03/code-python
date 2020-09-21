@@ -2,11 +2,13 @@
 # Output : 'cat tac act dog god'
 
 arr = ['cat', 'dog', 'tac', 'god', 'act']
+s = set()
+
 for i in arr:
     key = "".join(sorted(i))
-    # print(key)
-dect = {}
-dect['key'] = []
-print(dect['key'])
-dect['key'].append('dog')
-print(dect)
+    s.add(key)
+
+for j in sorted(s):
+    for i in arr:
+        if "".join(sorted(i)) == j:
+            print(i, end=" ")

@@ -20,10 +20,10 @@ Isprime(1, 10)
 def Isprime1(n):
     if n <= 1:
         return False
-    for i in range(2, n):
+    for i in range(2, n//2+1):
         if n % i == 0:
             return False
     return True
 
 
-print(tuple(filter(Isprime1, (i for i in range(1,)))))
+print(tuple(filter(Isprime1, (i for i in range(1,10)))))

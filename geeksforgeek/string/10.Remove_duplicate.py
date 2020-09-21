@@ -1,9 +1,8 @@
 a = 'geeksforgeeks'
-temp = ""
 string = ''
 for i in a:
-    if i not in temp:
-        temp += i
-        string+= i
+    if i not in string:
+        string += i
 print(string)
-print("".join(set(a)))
+
+print("".join(sorted(set(a))))

@@ -1,6 +1,16 @@
 # a = "geeks for geek"
-a = "ABeeIghiObhkUul"
-if ('a' and 'e' and 'i' and 'o' and 'u') in a:
+a = "ABeeIghiObhkUl"
+a = a.lower()
+if ('a' in a) and ('e' in a) and ('i' in a) and ('o' in a) and ('u' in a):
     print("present")
 else:
     print("not present")
+
+#method 2
+for i in set('aeiou'):
+    if i not in a:
+        print('not present')
+        break
+else:
+    print('present')
+

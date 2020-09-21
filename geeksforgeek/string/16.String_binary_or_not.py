@@ -1,6 +1,6 @@
 string = "100111"
-p = set(string)
-if p == {"0","1"} or p == {'0'} or p == {'1'}:
+
+if {'1', '0'} == set(string):
     print(True)
 else:
     print(False)

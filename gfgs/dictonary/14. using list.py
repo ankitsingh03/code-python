@@ -8,6 +8,6 @@ print(rev_A)
 nlst = []
 for i in rev_A:
     for j in arr:
-        if set(i) == set(j):
+        if sorted(i) == sorted(j):
             nlst.append((j))
 print(nlst)
