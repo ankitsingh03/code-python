@@ -2,15 +2,17 @@ def fibonacci(n):
     # 0, 1, 1, 2, 3,5
     a = 0
     b = 1
-    for j in range(n):
+    if n == a:
+        return True
+    
+    while not (b > n):
         c = a + b
         a = b
         b = c
-        yield b
+        if b == n:
+            return True
+    return False
 
 
 num = int(input("enter number you want to check"))
-for i in fibonacci(1000):
-    if num == i:
-        print(f"this {i} is fibonacci")
-        break
+print(fibonacci(num))
